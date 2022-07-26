@@ -1,16 +1,21 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  
     margin: 0;
     background: #222;
     font-family: 'Public Sans', sans-serif;
-    background-image: url('https://source.unsplash.com/1600x900/?nature');
+    background-image: url('https://source.unsplash.com/1600x900/?landscapes');
     font-size: 120%;
 
 }
 
+.flex-wrap{
+      display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    top: 20vh;
+    height: max-content;
+}
 .card {
     background-color: #000000d0;
     color: white;
@@ -60,4 +65,40 @@ input.search-bar {
 
 h1.temp {
     margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.loading {
+    display: none;
+}
+
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+
+  
+}
+footer {
+    color: gray;
+    position: fixed;
+    bottom: 0;
+    background-color: #000000d0;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+    padding: 10px;
+
+    
+   
+    
 }
